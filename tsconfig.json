@@ -1,8 +1,10 @@
+//Essa é a configuração que o compilador do TypeScript irá usar no momento em que for executada.
 {
     "compilerOptions": {
-      "outDir": "dist/js",
-      "target": "ES6",
-      "noEmitOnError": true
+      "outDir": "dist/js",  //Diretório que irá "jogar" o código compilado
+      "target": "ES6",      //Versão do JS que irá ser transformado
+      "noEmitOnError": true,  //Não permite que seja gerado códigos JS caso o TS esteja com erros
+      "noImplicitAny": true //Não deixa o tipo de dados ANY como padrão
     },
-    "include": ["app/**/*"]
+    "include": ["app/**/*"]   //Pasta que o compilador irá buscar o código TS.
   }
