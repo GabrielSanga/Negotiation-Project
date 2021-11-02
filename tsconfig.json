@@ -9,5 +9,5 @@
       "strictNullChecks": true, //Não permiti que o TSC assuma implicidamente o tipo null, caso faça sentido deve ser explícito.
       "experimentalDecorators": true //Ativa a execução de Decorator no compilador de TSC
     },
-    "include": ["app/**/*"]   //Pasta que o compilador irá buscar o código TS.
+    "include": ["app/src/**/*"]   //Pasta que o compilador irá buscar o código TS.
   }  
