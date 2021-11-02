@@ -5,7 +5,8 @@
       "target": "ES6",      //Versão do JS que irá ser transformado
       "noEmitOnError": true,  //Não permite que seja gerado códigos JS caso o TS esteja com erros
       "noImplicitAny": true, //Não deixa o tipo de dados ANY como padrão
-      "removeComments": true //Remove todos os comentários quando for gerar o arquivo compilado
+      "removeComments": true, //Remove todos os comentários quando for gerar o arquivo compilado
+      "strictNullChecks": true //Não permiti que o TSC assuma implicidamente o tipo null, caso faça sentido deve ser explícito.
     },
     "include": ["app/**/*"]   //Pasta que o compilador irá buscar o código TS.
   }

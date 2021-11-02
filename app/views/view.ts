@@ -4,9 +4,15 @@ export abstract class View<T> {
     private escapar: boolean;
 
     constructor(seletor: string, escapar: boolean = false){
-        this.elemento = document.querySelector(seletor);
+        const elemento = document.querySelector(seletor);
+        
+        if(elemento){
+            this.elemento = elemento as HTMLInputElement;
+        }else{
+            throw Error(`Seletor ${seletor} não encontrado no DOM!`);
+        }
+
         this.escapar = escapar;
-        console.log(escapar);
     }
 
     public update(model: T): void {
