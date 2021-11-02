@@ -14,12 +14,10 @@ export abstract class View<T> {
             throw Error(`Seletor ${seletor} não encontrado no DOM!`);
         }
     }
-
-    @inspecionar
-    @logarTempoExecucao(true)
+    
     public update(model: T): void {
         let template = this.template(model);
-        
+
         this.elemento.innerHTML = template;
      }
 
