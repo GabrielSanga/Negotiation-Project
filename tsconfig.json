@@ -4,7 +4,8 @@
       "outDir": "dist/js",  //Diretório que irá "jogar" o código compilado
       "target": "ES6",      //Versão do JS que irá ser transformado
       "noEmitOnError": true,  //Não permite que seja gerado códigos JS caso o TS esteja com erros
-      "noImplicitAny": true //Não deixa o tipo de dados ANY como padrão
+      "noImplicitAny": true, //Não deixa o tipo de dados ANY como padrão
+      "removeComments": true //Remove todos os comentários quando for gerar o arquivo compilado
     },
     "include": ["app/**/*"]   //Pasta que o compilador irá buscar o código TS.
   }
