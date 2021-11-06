@@ -2,6 +2,9 @@ export class Negociacoes {
     constructor() {
         this.aNegociacoes = [];
     }
+    paraTexto() {
+        return JSON.stringify(this.aNegociacoes, null, 2);
+    }
     adiciona(negociacao) {
         this.aNegociacoes.push(negociacao);
     }
