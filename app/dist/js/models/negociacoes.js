@@ -11,4 +11,7 @@ export class Negociacoes {
     lista() {
         return this.aNegociacoes;
     }
+    ehIgual(objeto) {
+        return JSON.stringify(this.aNegociacoes) === JSON.stringify(objeto.lista());
+    }
 }
