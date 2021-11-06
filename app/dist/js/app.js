@@ -19,3 +19,4 @@ if (botaoImportar) {
 else {
     throw Error("Seletor não encontrado");
 }
+//# sourceMappingURL=app.js.map
